@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!-- DTO Aliases -->
+	<typeAliases>
+		<typeAlias type="admin.BusinessTest.bean.loginDTO" alias="loginDTO"/>
+		<typeAlias type="admin.BusinessTest.bean.checkDTO" alias="checkDTO"/>
+		<typeAlias type="admin.BusinessTest.bean.registDTO" alias="registDTO"/>
+	</typeAliases>
+
+<!-- SQL패키지 내 sql파일(xml) 맵핑 -->
+	<mappers>
+		<mapper resource="/sql/memberSQL.xml"/>
+		<mapper resource="/sql/registSQL.xml"/>
+		<mapper resource="/sql/checkSQL.xml"/>
+	</mappers>
+
+</configuration>
